@@ -14,11 +14,11 @@ export class GroupService {
     return this.groupGateway.getGroups();
   }
 
-  public sendMessage(data:{groupId:string, message:string}) {
+  public sendMessage(data: { groupId: string; message: string }) {
     return this.groupGateway.sendMessage(data);
   }
 
-  public getAllMessage(groupId:string) {
+  public getAllMessage(groupId: string) {
     return this.groupGateway.getAllMessage(groupId);
   }
 

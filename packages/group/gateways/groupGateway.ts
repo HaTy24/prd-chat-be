@@ -23,24 +23,27 @@ export class GroupGateway {
   }
 
   public async getNewMessage() {
-    const res = await new Promise(resolve => {
-      this.socketClient.on('messageCreated', (response) => {
-        resolve(response)
-      })
+    const res = await new Promise((resolve) => {
+      this.socketClient.on("messageCreated", (response) => {
+        resolve(response);
+      });
     });
 
     return res;
   }
 
-  public async sendMessage(data: { groupId: string, message: string }) {
-    this.socketClient.emit('message', { groupId: data.groupId, message: data.message });
+  public async sendMessage(data: { groupId: string; message: string }) {
+    this.socketClient.emit("message", {
+      groupId: data.groupId,
+      message: data.message,
+    });
   }
 
-  public async getAllMessage(groupId:string) {
-    const data = await new Promise(resolve => {
-      this.socketClient.emit('findAllMessage', groupId, (response) => {
-        resolve(response)
-      })
+  public async getAllMessage(groupId: string) {
+    const data = await new Promise((resolve) => {
+      this.socketClient.emit("findAllMessage", groupId, (response) => {
+        resolve(response);
+      });
     });
     return data;
   }

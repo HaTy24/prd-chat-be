@@ -19,8 +19,7 @@ export default function GroupPage() {
         setAllMessage(data);
       })();
     }
-    console.log('reruen');
-
+    console.log("reruen");
   }, [router.isReady]);
 
   io("http://localhost:4000").on("messageCreated", (response) => {
