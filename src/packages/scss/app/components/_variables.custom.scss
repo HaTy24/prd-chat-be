@@ -1,0 +1,18 @@
+// Theme colors
+// Primary
+$primary: #ff324b;
+$primary-active: #ff0844;
+
+$btn-gradient-degree: 315deg;
+$theme-gradient-colors: (
+  "primary": (
+    "dark": #ff0844,
+    "light": #ff815a,
+  )
+);
+$theme-active-gradient-colors: (
+  "primary": (
+    "dark": #e8073e,
+    "light": #e8704a,
+  )
+);

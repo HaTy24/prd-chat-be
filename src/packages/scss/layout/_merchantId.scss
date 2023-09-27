@@ -1,0 +1,35 @@
+.merchant-id {
+  .menu-blur {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      right: 0;
+      background-image:
+        linear-gradient(
+          to right,
+          rgba($black, 0),
+          rgba($white, 1) 100%
+        );
+      width: 10%;
+      height: 100%;
+    }
+  }
+}
+
+.banner_session {
+  top: 0;
+  z-index: 20;
+  box-shadow: 0 2px 20px rgb(0 0 0 / 10%);
+}
+
+.hidden_scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}

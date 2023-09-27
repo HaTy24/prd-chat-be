@@ -1,0 +1,20 @@
+@each $name, $value in $theme-gradient-colors {
+  // Gradient
+  .btn.btn-gradient-#{$name} {
+    $color: var(--kt-#{$name}-inverse);
+    $icon-color: var(--kt-#{$name}-inverse);
+    $border-color: var(--kt-#{$name});
+    $bg-color: null;
+
+    $color-active: var(--kt-#{$name}-inverse);
+    $icon-color-active: var(--kt-#{$name}-inverse);
+    $border-color-active: var(--kt-#{$name}-active);
+    $bg-color-active: null;
+
+    $bg: linear-gradient($btn-gradient-degree, var(--kt-#{$name}-gradient-light), var(--kt-#{$name}-gradient-dark));
+    $bg-active: linear-gradient($btn-gradient-degree, var(--kt-#{$name}-gradient-light-active), var(--kt-#{$name}-gradient-dark-active));
+
+    @include button-custom-variant($color, $icon-color, $border-color, $bg-color, $color-active, $icon-color-active, $border-color-active, $bg-color-active);
+    @include button-gradient-variant($color, $icon-color, $border-color, $bg, $color-active, $icon-color-active, $border-color-active, $bg-active);
+  }
+}

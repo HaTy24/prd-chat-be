@@ -1,0 +1,26 @@
+.nav-link {
+  color: $black;
+  cursor: pointer;
+
+  &:hover {
+    color: $purple;
+  }
+
+  &.active {
+    font-weight: bold;
+    position: relative;
+    color: var(--brand-primary);
+
+    &::after {
+      content: "";
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      position: absolute;
+      border-radius: 10px;
+      height: 2px;
+      width: 24px;
+      bottom: 10%;
+    }
+  }
+}

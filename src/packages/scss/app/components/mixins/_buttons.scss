@@ -1,0 +1,32 @@
+// stylelint-disable no-descending-specificity,scss/at-if-no-null
+@mixin button-gradient-variant(
+  $color,
+  $icon-color,
+  $border-color,
+  $bg,
+  $color-active,
+  $icon-color-active,
+  $border-color-active,
+  $bg-active
+) {
+  @if $bg != null {
+    background: $bg;
+  }
+
+  .btn-check:checked + &,
+  .btn-check:active + &,
+  &:focus:not(.btn-active),
+  &:hover:not(.btn-active),
+  &:active:not(.btn-active),
+  &.active,
+  &.show,
+  .show > & {
+    @if $border-color-active != null {
+      border-color: $border-color-active;
+    }
+
+    @if $bg-active != null {
+      background: $bg-active !important;
+    }
+  }
+}

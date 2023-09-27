@@ -1,0 +1,15 @@
+// stylelint-disable scss/no-global-function-names
+:root,
+[data-theme="light"] {
+  // Contextual gradient colors
+  @each $name, $value in $theme-gradient-colors {
+    --kt-#{$name}-gradient-dark: #{map-get($value, "dark")};
+    --kt-#{$name}-gradient-light: #{map-get($value, "light")};
+  }
+
+  // Contextual active state gradient colors
+  @each $name, $value in $theme-active-gradient-colors {
+    --kt-#{$name}-gradient-dark-active: #{map-get($value, "dark")};
+    --kt-#{$name}-gradient-light-active: #{map-get($value, "light")};
+  }
+}

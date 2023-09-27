@@ -1,0 +1,7 @@
+.inline-field__edit-btn {
+  color: $gray-500;
+
+  &:hover {
+    color: var(--brand-primary) !important;
+  }
+}

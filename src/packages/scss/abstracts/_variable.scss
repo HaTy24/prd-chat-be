@@ -1,0 +1,56 @@
+$white: #fff;
+$black: #000;
+
+// color themes
+$gray-base: #14142a;
+$gray-100: #fcfcfc;
+$gray-200: #f7f7fc;
+$gray-300: #eff0f6;
+$gray-400: #d6d8e7;
+$gray-500: #a0a3bd;
+$gray-600: #6e7191;
+$gray-700: #4e4b66;
+$gray-800: #14142a;
+
+$app-primary: #ff324b;
+$app-primary-dark: #d32b01;
+$app-primary-light: #ff815a;
+
+$red: #e52f20;
+$red-dark: #e52f20;
+$red-light: #e52f20;
+
+$secondary: #f79917;
+$purple: #62006e;
+
+$gradient: linear-gradient(90deg, #62006e 0%, #a20069 100%);
+
+$warning: #f4b740;
+$warning-dark: #f79917;
+$warning-light: #fff0d4;
+
+$error: #ed2e7e;
+$error-dark: #c30052;
+$error-light: #fff2f7;
+
+$success: #00ba88;
+$success-dark: #00966d;
+$success-light: #f3fdfa;
+
+// INFO: font size
+$h1-font-size: 3rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.5rem;
+
+$font-sizes: (
+  1: 3rem,
+  2: 2rem,
+  3: 1.5rem,
+  4: 1.25rem,
+  5: 1rem,
+  6: 0.875rem,
+  7: 0.75rem,
+  8: 0.625rem,
+);
+$paragraph-margin-bottom: 0;
+$zindex-fixed: 9999;

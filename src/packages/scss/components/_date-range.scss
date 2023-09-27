@@ -1,0 +1,7 @@
+.hide-defined-ranges {
+  & .rdrDefinedRangesWrapper {
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}
